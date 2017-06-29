@@ -1,6 +1,12 @@
 # packaged-fastlane 🚀
+
+## Prerequisites
+- Ruby 2.1.0 or later.
+- aws-sdk-v1 `gem install aws-sdk-v1`
+- rake `gem install rake`
+
 ## Create the package 🛠
-Creating the bundle is simple. Just run `rake package:standalone:zip` to compile and build the package of ruby with `fastlane`. 
+Run `rake package:standalone:zip` to compile and build a package containing both ruby and `fastlane`. 
 
 This job queries RubyGems to get the most recent version that is available and builds that version of `fastlane`. By running `rake --tasks` you should also be able to predict what version will be built as that will also make the call to fetch the most recent version from RubyGems.
 
